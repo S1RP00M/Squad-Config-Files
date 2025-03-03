@@ -1,15 +1,15 @@
-version: "3"
+version: '3.9'
 volumes:
   squad_data:
 
 services:
-  squad-event:
+  squad-server:
     image: cm2network/squad
     stdin_open: true
     tty: true
     restart: always
     volumes:
-      - squad_data:D:\Squad-Config-Files\ServerConfig
+      - squad_data:/home/steam/squad-dedicated/
 
     environment:
       - PORT=7787
