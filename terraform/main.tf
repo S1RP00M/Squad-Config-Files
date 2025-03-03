@@ -6,7 +6,7 @@ resource "google_compute_instance" "squad_server" {
 
   boot_disk {
     initialize_params {
-      image = "windows-server-2025-datacenter"  # อาจต้องตรวจสอบให้แน่ใจว่า image นี้มีใน Google Cloud
+      image = "windows-server-2025-datacenter"  
       size  = 100  # ขนาดดิสก์ 100 GB
       type  = "pd-balanced"  # แบบของ Persistent Disk ที่เลือกคือ Balanced Persistent Disk
     }
